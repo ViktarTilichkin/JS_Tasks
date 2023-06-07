@@ -59,16 +59,43 @@
 //     }
 // }
 
-// console.log('Task 28');
+console.log('Task 28');
+{
+    //     28.Дан массив с элементами [1, 2, 2, 3, 4, 4, 3, 4, 5]. Выведите только уникальные
+    // значения массива -> [1, 5] (for)
+    const array = [1, 2, 2, 3, 4, 4, 3, 4, 5];
+    const result = [];
+    for (let i = 0; i < array.length; i++) {
+        let x = 0
+        for (let j = 0; j < array.length; j++) {
+            if (array[i] == array[j]) {
+                x++;
+            }
+        }
+        if (x == 1 && !result.includes(array[i])) {
+            result.push(array[i]);
+        }
+    }
+    console.log(result);
+    const array1 = [1, 2, 2, 3, 4, 4, 3, 4, 5];
+    const result1 = [];
 
-// // 28.На вход программе подается строка текста. Напишите программу, которая
-// // проверяет, что строка заканчивается подстрокой .com или .ru. Если
-// // заканчивается, то вывести true, в противном случае false
+    for (let i = 0; i < array.length; i++) {
+        const value = array[i];
+        let unique = true;
 
-// {
-//     let text = prompt();
-//     alert(text.endsWith('.com') || text.endsWith('.ru'))
-// }
+        for (let j = 0; j < array.length && unique; j++) {
+            if (i === j) continue;
+
+            unique = value !== array[j];
+        }
+
+        if (unique) {
+            result.push(value);
+        }
+    }
+    console.log(result);
+}
 
 // console.log('Task 29');
 

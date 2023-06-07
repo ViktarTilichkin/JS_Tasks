@@ -7,12 +7,18 @@
 // alert(`${a > b ? 'a больше' : 'b больше'}`);
 // alert(Math.max(a, b));
 
-// console.log('Задача 2');
+console.log('Task 2');
+{
+    // 2. Дан статичный массив элементов. С помощью цикла for найдите произведение
+    // всех элементов массива
 
-// // 2. Выявить является ли введенное число четным
-
-// const x = +prompt('Enter value');
-// alert(x % 2 == 0 ? 'Четное' : 'не четное');
+    const array = [12, 1, 5, 6, 8, 987, 96, 54, 123];
+    let result = 0;
+    for (let i = 0; i < array.length; i++) {
+        result += array[i];
+    }
+    alert(result);
+}
 
 // console.log('задача 3');
 

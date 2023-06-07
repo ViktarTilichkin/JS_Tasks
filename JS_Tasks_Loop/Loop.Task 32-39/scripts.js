@@ -16,37 +16,31 @@
 //     }
 // }
 
-// console.log('task 33');
+console.log('Task 33');
+{
+    //     33. Дан массив с элементами 1, 2, 3, 4, 5, 6, 7, 8, 9. С помощью цикла for создайте строку
+    // '-1-2-3-4-5-6-7-8-9-‘
 
-// // 33. Дана строка из 3 слов разделенных пробелом:
-// // • Найдите количество символов в этой строке.
-// // • Вырежите из нее 2 и 3 слова.
-// // • Найдите индекс 2 подстроки
+    const array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    let result = '';
+    for (let i = 0; i < array.length; i++) {
+        result += `-${array[i]}`;
+        if (i == array.length - 1) {
+            result += '-';
+        }
+    }
+    alert(result);
 
+}
 
-// {
-//     let text = prompt();
-//     if (isNaN(text)) {
-//         alert(text.length);
-//         text = text.split(' ');
-//         text.splice(1, 2);
-//         text = text.toString();
-//         alert(text);
-//         alert(text.length);
-//     }
-//     else {
-//         alert('error');
-//     }
-// }
+console.log('Task 34');
+{
+    // 34.Дано число 7, найдите все числа кратные 7 до 100
+    for (let i = 7; i <= 100; i += 7) {
+        console.log(i);
+    }
 
-// console.log('Task 34');
-
-// // 34.Пользователь вводит дату в формате ‘х-х-х'. Замените все дефисы на '!'
-
-// {
-//     let text = prompt();
-//     alert(text.split('-').join('!'));
-// }
+}
 
 // console.log('Task 35');
 
@@ -102,14 +96,3 @@
 //     alert(nameSymb === nameSymb.toUpperCase() && lastSymb === lastSymb.toUpperCase());
 // }
 
-// console.log('Task 39');
-
-// // 39. На вход программе подается строка текста. Напишите программу, которая
-// // определяет является ли строка хорошей. Текст хороший, если содержит
-// // подстроку «хорош» во всевозможных регистрах.
-// // я очень хороший текст => true
-
-// {
-//     let text = prompt();
-//     alert(text.toLowerCase().includes('хорош'));
-// }
