@@ -4,7 +4,7 @@
 // // возвращающую конкатенацию всех строчных элементов массива
 
 // {
-//     function chekString(array) {
+//     function chekString(array) { 
 //         let result = true;
 //         for (i = 0; i < array.length; i++) {
 //             if (!isNaN(array[i])) {
