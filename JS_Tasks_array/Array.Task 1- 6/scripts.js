@@ -12,7 +12,7 @@
 //         return !isNaN(el);
 //     });
 //     alert(result.length != 0 ? result : 'массив пуст');
-
+  
 // }
 
 // console.log('Task 2');
