@@ -22,7 +22,7 @@ console.log('Task 33');
     // '-1-2-3-4-5-6-7-8-9-‘
 
     const array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-    let result = '';
+    let result = ''; 
     for (let i = 0; i < array.length; i++) {
         result += `-${array[i]}`;
         if (i == array.length - 1) {
