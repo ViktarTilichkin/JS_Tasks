@@ -5,5 +5,5 @@ let a = +prompt("Введите минуты");
 
 let min = a % 60;
 let hour = (a - min) / 60;
-
+ 
 alert(`${hour} часы ${min} минуты`);
