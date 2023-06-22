@@ -23,7 +23,7 @@
 //         array.push(prompt());
 //     }
 //     const result = array.every(function (elem) {
-//         return isNaN(elem);
+//         return isNaN(elem);    
 
 //     })
 // }
