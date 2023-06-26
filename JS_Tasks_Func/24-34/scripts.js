@@ -20,7 +20,7 @@
         let result = array.map(function (el, index) {
             return (index + 1) % 2 != 0 ? array[index].toLowerCase() : array[index].toUpperCase();
         });
-        return result.join(' ');
+        return result.join(' ');  
     }
     let text = 'hello world my name Viktor';
     let resutl = convert(text);
